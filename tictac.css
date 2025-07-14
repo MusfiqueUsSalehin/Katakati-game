@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body { 
+    background-color: #111;
+    text-align: center;
+    height: 100vh;
+    padding: 5vh;
+    
+}
+.wrapper span{
+    position: fixed;
+    bottom: -180px;
+    height: 50px;
+    width: 50px;
+    z-index: -1;
+    background-color: #18191f;
+    box-shadow: 0 0 50px #0072ff,
+                0 0 100px #0072ff,
+                0 0 1cap #0072ff,
+                0 0 200px #0072ff;
+    animation: back 10s linear infinite;
+}
+
+.wrapper span:nth-child(1)
+{
+    left: 60px;
+    animation-delay: 0.6s;
+
+}
+.wrapper span:nth-child(2)
+{
+    left: 0%;
+    animation-delay: 3s;
+    width: 60px;
+    height: 60px;
+}
+.wrapper span:nth-child(3)
+{
+    left: 20%;
+    animation-delay: 2ms;
+
+
+}
+.wrapper span:nth-child(4)
+{
+    left: 30%;
+    animation-delay: 5s;
+    width: 80px;
+    height: 80px;
+
+}
+.wrapper span:nth-child(5)
+{
+    left: 40%;
+    animation-delay: 1s;
+    
+}
+.wrapper span:nth-child(6)
+{
+    left: 50%;
+    animation-delay: 7s;
+
+}
+.wrapper span:nth-child(7)
+{
+    left: 60%;
+    animation-delay: 6s;
+    width: 100px;
+    height: 100px;
+
+
+}
+.wrapper span:nth-child(8)
+{
+    left: 70%;
+    animation-delay: 8s;
+    
+}
+.wrapper span:nth-child(9)
+{
+    left: 80%;
+    animation-delay: 6s;
+    width: 90px;
+    height: 90px;
+}
+.wrapper span:nth-child(10)
+{
+    left: 90%;
+    animation-delay: 4s;
+
+}
+
+@keyframes back {
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+    
+}
+
+
+h1{
+    color: #302F4D;
+    font-size: 2.5rem;
+    position: relative;
+    letter-spacing: 10px;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+    outline: none;
+    width: 100%;
+    animation: animate 5s linear infinite;
+    line-height:  0.8em ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+
+}
+
+@keyframes animate {
+    0%, 18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+
+    {
+        color: #302F4D;
+        text-shadow: none;
+    }
+    18.1%,20.1%,50.1%,30%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+       color: #fff; 
+       text-shadow: 0 0 10px #03bcf4,
+       0 0 10px #03bcf4,
+       0 0 10px #03bcf4,
+       0 0 10px #03bcf4,
+       0 0 10px #03bcf4;
+
+    }
+    
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+
+    position: relative;
+
+}
+
+.box{
+    background-color: #000000 ;
+    color: rgba(65,227,255, 0.801);
+    height: 18vmin;
+    width: 18vmin; 
+    border-radius: 3rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(65,227,255, 0.801);
+    font-size: 5vmin;
+    cursor: pointer;
+}
+#reset{
+    
+    
+    
+    padding: 0;
+    font-size: 160%;
+    border-radius: 40px;
+    width: 25vmin;
+    height: 8vmin;
+    background-color: rgba(95, 231, 255, 0.801);
+    box-shadow: 0 0 1rem rgba(222, 214, 214, 0.81);
+    color: #000000;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    
+}
+
+#new{
+    
+    
+    margin: 22px ;
+    padding: 0rem;
+    font-size: 100%;
+    border-radius: 5rem;
+    width: 20vmin;
+    height: 4vmin;
+    background-color: #720e0e;
+    box-shadow: 0px 4px 0px rgb(255, 164, 164);
+    color: rgb(255, 164, 164);
+    border: none;
+    transition: all 0.1s ease-in-out;
+    caret-color: transparent;
+
+    font-weight:bold;
+
+    
+}
+
+#new:active{
+    transform: translateY(4px);
+    box-shadow: 0px 1px 0px rgb(205, 243, 255);
+}
+
+
+
+
+.o{
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-top: 100px;
+    font-family:'Courier New', Courier, monospace;
+    caret-color: transparent;
+
+}
+
+.x{
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px ;
+    margin-top: 29px;
+    font-family: 'Courier New', Courier, monospace;
+    caret-color: transparent;
+
+}
+
+.name1{
+    padding: 10px 80px;
+    font-size: 20px;
+    border-radius: 30px;
+    outline: none;
+    background-color: #18191f;
+    box-shadow: 0 0 50px #0051b3,
+                0 0 100px #0051b3,
+                0 0 1cap #0051b3,
+                0 0 200px #0051b3;
+    color: #12ffff;
+    text-shadow: 1px 1px 4px #a2ccff;
+    
+}
+
+.name1::placeholder{
+    color:#12ffff;
+    opacity: 0.2;
+}
+
+
+.name2{
+    padding: 10px 80px;
+    font-size: 20px;
+    border-radius: 30px;
+    outline: none;
+    background-color: #18191f;
+    box-shadow: 0 0 50px #0051b3,
+                0 0 100px #0051b3,
+                0 0 1cap #0051b3,
+                0 0 200px #0051b3;
+    color: #12ffff;
+    text-shadow: 1px 1px 4px #a2ccff;
+}
+
+.name2::placeholder{
+    color:#12ffff;
+    opacity: 0.2;
+}
+
+
+.start{
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 150px;
+    padding: 5px 50px;
+    font-size:20px ;
+    border-radius: 30px;
+    background-color: #36bdbd;
+    box-shadow: 0px 5px 0px rgb(205, 243, 255);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    caret-color: transparent;
+
+    font-weight:bold;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.start:active{
+    transform: translateY(4px);
+    box-shadow: 0px 1px 0px rgb(205, 243, 255);
+}
+
+
+.result{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+
+}
+
+
+
+
+.card {
+  
+  padding: 30px 40px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #000000 ;
+  color: rgba(84, 255, 198, 0.801);
+  border: none;
+  box-shadow: 0 0 1rem rgba(65,227,255, 0.801);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  
+}
+  
+
+.card p {
+  margin-bottom: 20px;
+}
+
+
+
+.card button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  
+  border-radius: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width:600px) {
+
+    .name1{
+        width: 40vw;
+    }
+
+    .name1::placeholder{
+        font-size: 100%;
+    }
+
+    .name2{
+        width:40vw;
+    }
+
+    .name2::placeholder{
+        font-size: 100%;
+    }
+
+    .start{
+       margin-left: 26%; 
+       margin-top: 164px;
+    }
+
+    .o{
+        margin-top: 5%;
+    }
+
+
+    .body{
+        height: 100%;
+    }
+
+.box{
+    height: 18vmin;
+    width: 18vmin; 
+    border-radius: 30px;
+   
+}
+
+
+.card {
+  
+margin: 45px;
+
+}
+
+#new{
+
+    width: 35vmin;
+    height: 10vmin;
+}
+
+#reset{
+    font-size: 110%;
+}
+   
+}
+
+
+@media (max-width:370px) {
+
+        .o{
+        font-size: 6vw;
+
+    }
+
+    .x{
+        font-size: 6vw;
+    }
+
+    .name1::placeholder{
+        font-size: 95%;
+    }
+
+    .name2::placeholder{
+        font-size: 95%;
+    }
+
+
+
+    .body{
+        height: 100%;
+    }
+
+    .box{
+    height: 18vmin;
+    width: 18vmin; 
+    border-radius: 25px;
+
+    }
+  
+    
+}
+
+
+
+
+
+
+
+
+
+
