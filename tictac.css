@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+
+    -webbkit-tap-highlight-color: transparent;
+    outline: none;
+    touch-action: manipulation;
+    user-select: none;
     
 }
 body { 
@@ -121,7 +126,8 @@ h1{
     animation: animate 5s linear infinite;
     line-height:  0.8em ;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
+    touch-action: manipulation;
+    user-select: none
 
 }
 
@@ -178,6 +184,12 @@ h1{
     box-shadow: 0 0 1rem rgba(65,227,255, 0.801);
     font-size: 5vmin;
     cursor: pointer;
+
+    -webbkit-tap-highlight-color: transparent;
+    outline: none;
+
+    touch-action: manipulation;
+    user-select: none;
 }
 #reset{
     
@@ -196,8 +208,15 @@ h1{
 
     cursor: pointer;
 
+    -webbkit-tap-highlight-color: transparent;
+    outline: none;
+
+    touch-action: manipulation;
+    user-select: none;
+}   
+
     
-}
+
 
 #new{
     
@@ -217,8 +236,15 @@ h1{
 
     font-weight:bold;
 
-    
+    -webbkit-tap-highlight-color: transparent;
+    outline: none;
+
+    touch-action: manipulation;
+    user-select: none;
 }
+
+    
+
 
 #new:active{
     transform: translateY(4px);
@@ -304,6 +330,11 @@ h1{
     caret-color: transparent;
 
     font-weight:bold;
+    -webbkit-tap-highlight-color: transparent;
+    outline: none;
+
+    touch-action: manipulation;
+    user-select: none;
     
 }
 

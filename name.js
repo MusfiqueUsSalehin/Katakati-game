@@ -5,7 +5,7 @@ let nameX = "";
 
 playerO.addEventListener("keyup", function(e){
     if (e.key==="Enter"){
-        nameO=playerO.value;
+       
         console.log("done")
         
         
@@ -19,23 +19,27 @@ playerO.addEventListener("keyup", function(e){
 
 playerX.addEventListener("keyup", function(e){
     if (e.key==="Enter"){
-        nameX=playerX.value;
+        
         
         playerX.style.caretColor = "transparent" ;
         //alert(`'${nameX}' first turn will be yours.` );
+        
 
     }
 })
 
 document.querySelector(".start").addEventListener("click", () => {
 
+    const nameO = playerO.value.trim();
+    const nameX = playerX.value.trim();
+
     if (nameO==="" || nameX==="") {
         alert("Please enter both player names");
         return;
     }
 
-    localStorage.setItem("nameO", playerO.value.trim());
-    localStorage.setItem("nameX", playerX.value.trim());
+    localStorage.setItem("nameO", nameO);
+    localStorage.setItem("nameX", nameX);
 
     window.location.href = "tictac.html";
 
